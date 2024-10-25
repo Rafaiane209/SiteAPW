@@ -1,0 +1,399 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F1F2;
+    color: #13293D;
+}
+
+header {
+    background-color: #006494;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    height: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: font-size 18px, 0.5s;
+}
+
+nav a:hover {
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+    border: solid 3px #fff;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #006494;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+footer{
+    font-size: 18px;
+}
+h1{
+    font-size: 40px;
+}
+
+/* Estilo geral da seção de contato */
+#contato {
+    background-color: #E8F1F2; 
+    padding: 20px;
+       border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título da seção */
+#contato h2 {
+    color: #13293D; /* Azul escuro */
+    text-align: center;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Estilos dos rótulos */
+label {
+    font-weight: bold;
+    color: #13293D; /* Azul escuro */
+}
+
+/* Estilos dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="mensagem"] {
+    padding: 10px;
+    border: 1px solid #13293D; /* Azul escuro */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #13293D; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #006494; 
+}
+.seção1{
+    text-align: center;
+    height:250px;
+    font-size: 20px;
+}
+.seção2{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.seção2.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+#img-introdução{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 20px;
+}
+#beneficios{
+    font-size: 20px;
+    display: flex;
+}
+.seção3{
+    text-align: center;
+    height: 1500px;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+.seção4{
+    height: 370px;
+    text-align: center;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.seção5{
+    text-align: center;
+    height: 150px;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+#ladoalado{
+    display: flex;
+    gap: 90px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+#ladobeneficios{
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    height: 300px;
+}
+#mensagem{
+    height: 50px;
+}
+#imgacesso{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgintegração{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imginteração{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgescalabilidade{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgexperiência{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#numeros{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+}
+#imgp1{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+#imgp2{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+#imgp3{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+#imgp4{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+#imgbeneficios{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#ladobeneficios:hover{
+    transition: 0.5;
+    background-image: url(beneficios.png);
+    height: 500px;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+    nav ul li {
+        display: block; /* Muda para bloco em telas menores */
+        margin: 10px 0; /* Margem vertical */
+    }
+
+    h1 {
+        font-size: 30px; /* Reduz o tamanho do título */
+    }
+
+    #img-introdução {
+        width: 350px; /* Imagem responsiva */
+        height: auto; /* Mantém proporção */
+    }
+
+    #ladoalado {
+        flex-direction: column; /* Altera direção para coluna */
+        gap: 30px; /* Menor espaço entre elementos */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+
+    header {
+        height:280px; /* Altura reduzida do header */
+        padding: 10px; /* Menos padding */
+    }
+
+    nav a {
+        padding: 5px; /* Menos padding nos links */
+    }
+
+    button {
+        font-size: 16px; /* Tamanho do botão ajustado */
+        padding: 8px 12px; /* Menos padding */
+    }
+
+    #img-introdução,
+    #imgbeneficios {
+        width: 350; /* Imagens ocupam 100% da largura */
+        height: auto; /* Mantém proporção */
+    }
+
+    .seção1, .seção3, .seção4, .seção5 {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    #numeros {
+        flex-direction: column; /* Muda direção para coluna */
+        gap: 20px; /* Espaço menor entre números */
+    }
+    #imagens{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #ladobeneficios{
+        height: 400px;
+    }
+    #transformação{
+        height: 1800px;
+    }
+    #fases{
+        height: 1400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #boas{
+        height: 200px;
+    }
+    #imgintegração{
+        height: 200px;
+        width: 350px;
+    }
+    #imginteração{
+        height: 200px;
+        width: 350px;
+    }
+    #imgescalabilidade{
+        height: 200px;
+        width: 350px;
+    }
+    #imgexperiência{
+        height: 200px;
+        width: 350px;
+    }
+    #imgp1{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp2{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp3{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp4{
+        height: 200px;
+        width: 380px;
+    }
+    #ladobeneficios:hover{
+        background-image: url(imgmedia.png);
+        height: 2000px;
+    }
+    .seção2{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    }
+    .seção2.hidden {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+}

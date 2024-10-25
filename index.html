@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Site APW</title>
+    <style>
+        body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F1F2;
+    color: #13293D;
+}
+
+header {
+    background-color: #006494;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    height: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    gap: 90px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: font-size 15px, 0.5s;
+}
+
+nav a:hover {
+    font-size: 18px;
+    color: white;
+    transition: 0.5s;
+    border: solid 3px #fff;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #006494;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+footer{
+    font-size: 18px;
+}
+h1{
+    font-size: 40px;
+}
+
+/* Estilo geral da seção de contato */
+#contato {
+    background-color: #E8F1F2; 
+    padding: 20px;
+       border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título da seção */
+#contato h2 {
+    color: #13293D; /* Azul escuro */
+    text-align: center;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Estilos dos rótulos */
+label {
+    font-weight: bold;
+    color: #13293D; /* Azul escuro */
+}
+
+/* Estilos dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="mensagem"] {
+    padding: 10px;
+    border: 1px solid #13293D; /* Azul escuro */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #13293D; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #006494; 
+}
+.seção1{
+    text-align: center;
+    height:250px;
+    font-size: 20px;
+}
+.seção2{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.seção2.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+#img-introdução{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 20px;
+}
+#beneficios{
+    font-size: 20px;
+    display: flex;
+}
+.seção3{
+    text-align: center;
+    height: 1500px;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+.seção4{
+    height: 370px;
+    text-align: center;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.seção5{
+    text-align: center;
+    height: 150px;
+    font-size: 20px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+#ladoalado{
+    display: flex;
+    gap: 90px;
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+#ladobeneficios{
+    border: solid 3px #ccc ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    height: 300px;
+}
+#mensagem{
+    height: 50px;
+}
+#imgacesso{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgintegração{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imginteração{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgescalabilidade{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imgexperiência{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#numeros{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+}
+
+#imgp1{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+#imgp2{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+#imgp3{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+#imgp4{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+#imgbeneficios{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#ladobeneficios:hover{
+    transition: 0.5;
+    background-image: url(fundo\ de\ tela\ bnf.png);
+    height: 600px;
+    background-size: cover;
+}
+@media (max-width: 1024px) {
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+        gap: 70px;
+    }
+
+    h1 {
+        font-size: 30px; 
+    }
+
+    #img-introdução {
+        width: 350px; 
+        height: auto; 
+    }
+
+    #ladoalado {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        height:280px; 
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 5px; 
+    }
+
+    button {
+        font-size: 16px; 
+        padding: 8px 12px; 
+    }
+
+    #img-introdução,
+    #imgbeneficios {
+        width: 350;
+        height: auto;
+    }
+
+    .seção1, .seção3, .seção4, .seção5 {
+        font-size: 16px;
+    }
+
+    #numeros {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #imagens{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #ladobeneficios{
+        height: 400px;
+    }
+    #transformação{
+        height: 1800px;
+    }
+    #fases{
+        height: 1400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #boas{
+        height: 200px;
+    }
+    #imgintegração{
+        height: 200px;
+        width: 350px;
+    }
+    #imginteração{
+        height: 200px;
+        width: 350px;
+    }
+    #imgescalabilidade{
+        height: 200px;
+        width: 350px;
+    }
+    #imgexperiência{
+        height: 200px;
+        width: 350px;
+    }
+    #imgp1{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp2{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp3{
+        height: 200px;
+        width: 380px;
+    }
+    #imgp4{
+        height: 200px;
+        width: 380px;
+    }
+    #ladobeneficios:hover{
+        background-image: url(imgmedia.png);
+        height: 2000px;
+    }
+    .seção2{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    }
+    .seção2.hidden {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+            <h1>A Importância dos Projetos de Sistemas Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introdução">Introdução aos Sistemas Web</a></li> 
+                    <li><a href="#beneficios">Benefícios dos Projetos de Sistemas Web</a></li> 
+                    <li><a href="#transformação">Transformação Digital e Competitividade</a></li> 
+                    <li><a href="#fases">Fases de um Projeto de Sistema Web</a></li>
+                    <li><a href="#boas">Boas Práticas em Desenvolvimento Web</a></li> 
+                    <li><a href="#contato">Contato</a></li> 
+    
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div id="ladoalado">
+            <section id="Introdução" class="seção1">
+                <h2>Introdução aos Sistemas Web</h2>
+                <p>Os sistemas Web são geralmente interpretados e identificados como websites dinâmicos. Eles permitem a criação de contas e fornecem experiências personalizadas para cada usuário, de acordo com suas preferências e comportamentos. Também são chamados de “Web-Apps”, já que apresentam funcionalidades  semelhantes à aplicativos, mas não dependem da instalação de programas além de um navegador.</p>
+            </section><img src="imagem introdução.png" alt="imagem" id="img-introdução">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div id="ladobeneficios">
+            <h2>Benefícios dos Projetos de Sistemas Web</h2>
+            <br>
+            <section id="beneficios" class="seção2" onclick="toggleText()">
+                <ul>
+                    <li>Melhoria na eficiência operacional</li>
+                    <br>
+                    <li>Redução de custos</li>
+                    <br>
+                    <li>Acessibilidade e escalabilidade</li>
+                    <br>
+                    <li>Integração com outras plataformas e ferramentas</li>
+                </ul>
+                <br>
+            </section> 
+        </div>
+        <br>
+        <br>
+        <br>
+        <section id="transformação" class="seção3">
+            <h2>Transformação Digital e Competitividade</h2>
+            <h3>Os sistemas web desempenham um papel crucial na transformação digital das empresas. Aqui estão algumas maneiras específicas como eles contribuem: <br></h3>
+            <p>
+                <b>Acesso Universal: </b> Sistemas web podem ser acessados de qualquer lugar, permitindo que funcionários e clientes se conectem facilmente, promovendo flexibilidade e colaboração. <br>
+                <br>
+                <img src="https://tagpage.com.br/wp-content/uploads/2019/08/sistema-web-responsivo-1024x466.png" alt="imagem" id="imgacesso"> <br>
+                <br>
+                <b>Integração de Processos:</b>Eles permitem integrar diferentes áreas da empresa, como vendas, marketing e atendimento ao cliente, criando uma visão unificada das operações. <br>
+                <br>
+                <img src="https://itsstecnologia.com.br/blogs/wp-content/uploads/2021/04/integracao-na-empresa.png" alt="imagem" id="imgintegração"> <br>
+                <br>
+                <b>Interação em Tempo Real:</b> As plataformas web possibilitam comunicação instantânea, permitindo que empresas respondam rapidamente às necessidades e feedback dos clientes. <br>
+                <br>
+                <img src="https://miro.medium.com/max/1456/1*yVedpJOlGUpgKeZ2c0-Icw.jpeg" alt="imagem" id="imginteração"> <br>
+                <br>
+                <b>Escalabilidade:</b> A infraestrutura web pode ser dimensionada de acordo com as necessidades da empresa, suportando o crescimento sem grandes investimentos em hardware. <br>
+                <br>
+                <img src="https://4linux.com.br/consultoria/wp-content/uploads/sites/3/2020/08/Solu%C3%A7%C3%A3o-de-infraestrutura-web-escal%C3%A1vel-com-Nginx-HAProxy-SolrCloud-e-Memcached.png" alt="imagem" id="imgescalabilidade"> <br>
+                <br>
+                <b>Experiência do Usuário: </b>Interfaces amigáveis e personalizáveis melhoram a experiência do cliente, aumentando a satisfação e a fidelidade. <br>
+                <br>
+                <img src="https://midiatica.com/wp-content/uploads/2023/01/UX-vs-UI-1024x606.png" alt="imagem" id="imgexperiência"> <br>
+                <br>
+            </p>
+        </section>
+        <br>
+        <br>
+        <br>
+
+        <section id="fases" class="seção4">
+            <h2>Fases de um Projeto de Sistema Web</h2>
+            <div id="numeros">
+                <div class="planejamento"><p>1. Planejamento e análise de requisitos</p>
+                    <img src="https://miro.medium.com/max/1558/1*DFMlkXjXesyf6P2iSddEyA.png" alt="p1" id="imgp1"> <br>
+                </div>
+                <div class="design"><p>2. Design e prototipação</p>
+                    <img src="https://www.supero.com.br/wp-content/uploads/2021/11/prototipa%C3%A7%C3%A3o-de-software-em-baixa-1024x655.jpg" alt="p2" id="imgp2"> <br>
+                </div>
+                <div class="desenvolvimento"><p>3. Desenvolvimento e testes</p>
+                    <img src="https://www.primecontrol.com.br/wp-content/uploads/2020/02/esquema_tradicional_desenvolvimento.png" alt="p3" id="imgp3"> <br>
+                </div>
+                <div class="implementacao"><p>4. Implementação e manutenção</p>
+                    <img src="https://tuliomartins.com.br/wp-content/uploads/2019/11/Tipos-de-Manuten%C3%A7%C3%A3o.jpg" alt="p4" id="imgp4"> <br>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+
+        <section id="boas" class="seção5">
+            <h2>Boas Práticas em Desenvolvimento Web</h2>
+            <p> Manter o foco em boas práticas em desenvolvimento web é essencial para garantir a qualidade, a segurança e a usabilidade dos sites e aplicações. </p>
+        </section>
+        <br>
+        <br>
+        <br>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem: </label>
+                <input type="mensagem" id="mensagem" name="mensagem" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    function toggleText() {
+     const seção2 = document.querySelector('.seção2');
+     seção2.classList.toggle('hidden');
+    }
+</script>
+</html>
